@@ -1,0 +1,69 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "As a user, I want to select a route so that I can search for flights",
+    "line": 1,
+    "id": "as-a-user,-i-want-to-select-a-route-so-that-i-can-search-for-flights",
+    "tags": [],
+    "uri": "flights.feature",
+    "elements": [
+      {
+        "id": "as-a-user,-i-want-to-select-a-route-so-that-i-can-search-for-flights;successful-flight-route-selection",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Successful Flight Route Selection",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to the BlazeDemo flights page",
+            "result": {
+              "status": "failed",
+              "duration": 339000000,
+              "error_message": "ReferenceError: login is not defined\n    at Context.eval (cypress/e2e/bdd/tests/flights/flights.cy.js:9:2)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User selects a departure city",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User selects a destination city",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User clicks on the Find Flights button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "User should be redirected to the search results page displaying available flights for the selected route",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

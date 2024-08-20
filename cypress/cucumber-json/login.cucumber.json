@@ -1,0 +1,364 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "As a registered user, I want to log in to my account with my credentials so that I can access my profile and personalized features",
+    "line": 1,
+    "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;successful-login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Successful Login with Valid Credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to the BlazeDemo login page",
+            "result": {
+              "status": "passed",
+              "duration": 1739000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "validemail",
+                      "validpassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "registered-user@yopmail.com",
+                      "goodPassword1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User enters valid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 1190000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "User is redirected to their profile",
+            "result": {
+              "status": "failed",
+              "duration": 4205000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.success-page`, but never found it.\n    at LoginPage.verifySuccessfulLogin (cypress/e2e/bdd/pages/loginPage.cy.js:52:32)\n    at Context.eval (cypress/e2e/bdd/tests/login/login.cy.js:27:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;failed-login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Failed Login with Invalid Credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to the BlazeDemo login page",
+            "result": {
+              "status": "passed",
+              "duration": 1848000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "invalidemail",
+                      "invalidpassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "unregistered-user@yopmail.com",
+                      "badPassword1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User enters invalid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "User clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 531000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "User should see an error message indicating the credentials are incorrect",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.login-error`, but never found it.\n    at LoginPage.verifyFailedlLogin (cypress/e2e/bdd/pages/loginPage.cy.js:56:31)\n    at Context.eval (cypress/e2e/bdd/tests/login/login.cy.js:40:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;unable-to-complete-login-with-invalid-email",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Unable to Complete Login with Invalid Email",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to the BlazeDemo login page",
+            "result": {
+              "status": "passed",
+              "duration": 2365000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "validpassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "goodPassword1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 21,
+            "name": "User enters a valid password",
+            "result": {
+              "status": "passed",
+              "duration": 123000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "noUsername",
+                      "noDomain",
+                      "noAtSign",
+                      "doubleAtSign",
+                      "cyrilicAlphabet",
+                      "specialCharacters"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "@yopmail.com",
+                      "username@",
+                      "username.yopmail.com",
+                      "username@@yopmail.com",
+                      "usernаme@yopmаil.cоm",
+                      "us..er&na~me@-yop_mail.com"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 24,
+            "name": "User enters an invalid email",
+            "result": {
+              "status": "passed",
+              "duration": 596000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "User clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 81000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "User should see an error message indicating that the email address does not meet the requirements",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;successful-login-with-valid-credentials-and-remember-me-enabled",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Successful Login with Valid Credentials and Remember Me Enabled",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to the BlazeDemo login page",
+            "result": {
+              "status": "passed",
+              "duration": 468000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "validemail",
+                      "validpassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "registered-user@yopmail.com",
+                      "goodPassword1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 31,
+            "name": "User enters valid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "User checks the Remember Me checkbox",
+            "result": {
+              "status": "passed",
+              "duration": 82000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "User clicks on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 357000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "User is redirected to their profile",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.success-page`, but never found it.\n    at LoginPage.verifySuccessfulLogin (cypress/e2e/bdd/pages/loginPage.cy.js:52:32)\n    at Context.eval (cypress/e2e/bdd/tests/login/login.cy.js:27:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;navigate-to-the-reset-password-page",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Navigate to the Reset Password Page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to the BlazeDemo login page",
+            "result": {
+              "status": "passed",
+              "duration": 1667000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "User clicks on the Forgot Your Password? link",
+            "result": {
+              "status": "passed",
+              "duration": 1326000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "User is redirected to the Reset Password page",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
