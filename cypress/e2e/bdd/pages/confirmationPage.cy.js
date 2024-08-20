@@ -7,5 +7,5 @@ class confirmationPage {
 
 }
 
-const confirmationPage = new confirmationPage();
-export default confirmationPage;
+const confirmation = new confirmationPage();
+export default confirmation;
