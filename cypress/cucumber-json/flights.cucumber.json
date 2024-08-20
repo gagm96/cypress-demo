@@ -22,7 +22,7 @@
             "name": "User navigates to the BlazeDemo flights page",
             "result": {
               "status": "failed",
-              "duration": 339000000,
+              "duration": 340000000,
               "error_message": "ReferenceError: login is not defined\n    at Context.eval (cypress/e2e/bdd/tests/flights/flights.cy.js:9:2)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },

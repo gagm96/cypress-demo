@@ -22,7 +22,7 @@
             "name": "User navigates to the BlazeDemo login page",
             "result": {
               "status": "passed",
-              "duration": 1739000000
+              "duration": 2272000000
             }
           },
           {
@@ -49,7 +49,7 @@
             "name": "User enters valid credentials",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 23000000
             }
           },
           {
@@ -59,7 +59,7 @@
             "name": "User clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 1190000000
+              "duration": 436000000
             }
           },
           {
@@ -69,7 +69,7 @@
             "name": "User is redirected to their profile",
             "result": {
               "status": "failed",
-              "duration": 4205000000,
+              "duration": 4182000000,
               "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.success-page`, but never found it.\n    at LoginPage.verifySuccessfulLogin (cypress/e2e/bdd/pages/loginPage.cy.js:52:32)\n    at Context.eval (cypress/e2e/bdd/tests/login/login.cy.js:27:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
@@ -90,7 +90,7 @@
             "name": "User navigates to the BlazeDemo login page",
             "result": {
               "status": "passed",
-              "duration": 1848000000
+              "duration": 613000000
             }
           },
           {
@@ -117,7 +117,7 @@
             "name": "User enters invalid credentials",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 4000000
             }
           },
           {
@@ -127,7 +127,7 @@
             "name": "User clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 531000000
+              "duration": 792000000
             }
           },
           {
@@ -157,7 +157,7 @@
             "name": "User navigates to the BlazeDemo login page",
             "result": {
               "status": "passed",
-              "duration": 2365000000
+              "duration": 679000000
             }
           },
           {
@@ -182,7 +182,7 @@
             "name": "User enters a valid password",
             "result": {
               "status": "passed",
-              "duration": 123000000
+              "duration": 95000000
             }
           },
           {
@@ -217,7 +217,7 @@
             "name": "User enters an invalid email",
             "result": {
               "status": "passed",
-              "duration": 596000000
+              "duration": 481000000
             }
           },
           {
@@ -227,7 +227,7 @@
             "name": "User clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 81000000
+              "duration": 78000000
             }
           },
           {
@@ -237,7 +237,7 @@
             "name": "User should see an error message indicating that the email address does not meet the requirements",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 2000000
             }
           }
         ]
@@ -257,7 +257,7 @@
             "name": "User navigates to the BlazeDemo login page",
             "result": {
               "status": "passed",
-              "duration": 468000000
+              "duration": 423000000
             }
           },
           {
@@ -284,7 +284,7 @@
             "name": "User enters valid credentials",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 4000000
             }
           },
           {
@@ -294,7 +294,7 @@
             "name": "User checks the Remember Me checkbox",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 84000000
             }
           },
           {
@@ -304,7 +304,7 @@
             "name": "User clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 357000000
+              "duration": 434000000
             }
           },
           {
@@ -334,7 +334,7 @@
             "name": "User navigates to the BlazeDemo login page",
             "result": {
               "status": "passed",
-              "duration": 1667000000
+              "duration": 765000000
             }
           },
           {
@@ -344,7 +344,7 @@
             "name": "User clicks on the Forgot Your Password? link",
             "result": {
               "status": "passed",
-              "duration": 1326000000
+              "duration": 293000000
             }
           },
           {
@@ -354,7 +354,7 @@
             "name": "User is redirected to the Reset Password page",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 2000000
             }
           }
         ]

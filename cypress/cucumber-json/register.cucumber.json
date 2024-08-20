@@ -22,7 +22,7 @@
             "name": "User navigates to the BlazeDemo registration page",
             "result": {
               "status": "passed",
-              "duration": 1083000000
+              "duration": 1099000000
             }
           },
           {
@@ -55,7 +55,7 @@
             "name": "User fills in all required fields with valid information",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 28000000
             }
           },
           {
@@ -65,7 +65,7 @@
             "name": "User clicks on Register button",
             "result": {
               "status": "passed",
-              "duration": 477000000
+              "duration": 822000000
             }
           },
           {
@@ -75,7 +75,7 @@
             "name": "User should be redirected to a confirmation page",
             "result": {
               "status": "failed",
-              "duration": 4185000000,
+              "duration": 4186000000,
               "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.success-page`, but never found it.\n    at registerPage.verifySuccessfulRegistration (cypress/e2e/bdd/pages/registerPage.cy.js:50:32)\n    at Context.eval (cypress/e2e/bdd/tests/register/register.cy.js:20:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
@@ -96,7 +96,7 @@
             "name": "User navigates to the BlazeDemo registration page",
             "result": {
               "status": "passed",
-              "duration": 420000000
+              "duration": 543000000
             }
           },
           {
@@ -129,7 +129,7 @@
             "name": "User leaves one or more required fields empty",
             "result": {
               "status": "passed",
-              "duration": 173000000
+              "duration": 174000000
             }
           },
           {
@@ -139,7 +139,7 @@
             "name": "User clicks on Register button",
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 78000000
             }
           },
           {
@@ -149,7 +149,7 @@
             "name": "User should see an error message indicating at least one required field still needs to be filled out",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 3000000
             }
           }
         ]
@@ -169,7 +169,7 @@
             "name": "User navigates to the BlazeDemo registration page",
             "result": {
               "status": "passed",
-              "duration": 321000000
+              "duration": 318000000
             }
           },
           {
@@ -200,7 +200,7 @@
             "name": "User has filled in all the required fields with valid information except email address",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 86000000
             }
           },
           {
@@ -235,7 +235,7 @@
             "name": "User enters an invalid email",
             "result": {
               "status": "passed",
-              "duration": 485000000
+              "duration": 506000000
             }
           },
           {
@@ -245,7 +245,7 @@
             "name": "User clicks on Register button",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 76000000
             }
           },
           {
@@ -255,7 +255,7 @@
             "name": "User should see an error message indicating that the email address does not meet the requirements",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 4000000
             }
           }
         ]
