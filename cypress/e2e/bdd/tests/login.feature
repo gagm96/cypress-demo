@@ -2,21 +2,21 @@ Feature: As a registered user, I want to log in to my account with my credential
 
     Background: Navigate to the Login Page
         Given User navigates to the BlazeDemo login page
-    
+    @smoke @sanity
     Scenario: Successful Login with Valid Credentials
 		When User enters valid credentials
 		| validemail                  | validpassword |
 		| registered-user@yopmail.com | goodPassword1 |
 		And User clicks on Login button
 		Then User is redirected to their profile
-    
+    @sanity
     Scenario: Failed Login with Invalid Credentials
 		When User enters invalid credentials
 		| invalidemail                  | invalidpassword |
 		| unregistered-user@yopmail.com | badPassword1    |
 		And User clicks on Login button
 		Then User should see an error message indicating the credentials are incorrect
-
+    @sanity
     Scenario: Unable to Complete Login with Invalid Email
         When User enters a valid password
         | validpassword  |

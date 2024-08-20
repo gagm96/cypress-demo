@@ -12,7 +12,16 @@
         "keyword": "Scenario",
         "line": 6,
         "name": "Successful User Registration",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 5
+          },
+          {
+            "name": "@sanity",
+            "line": 5
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -22,7 +31,7 @@
             "name": "User navigates to the BlazeDemo registration page",
             "result": {
               "status": "passed",
-              "duration": 1099000000
+              "duration": 2364000000
             }
           },
           {
@@ -55,7 +64,7 @@
             "name": "User fills in all required fields with valid information",
             "result": {
               "status": "passed",
-              "duration": 28000000
+              "duration": 30000000
             }
           },
           {
@@ -65,7 +74,7 @@
             "name": "User clicks on Register button",
             "result": {
               "status": "passed",
-              "duration": 822000000
+              "duration": 440000000
             }
           },
           {
@@ -75,7 +84,7 @@
             "name": "User should be redirected to a confirmation page",
             "result": {
               "status": "failed",
-              "duration": 4186000000,
+              "duration": 4071000000,
               "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.success-page`, but never found it.\n    at registerPage.verifySuccessfulRegistration (cypress/e2e/bdd/pages/registerPage.cy.js:50:32)\n    at Context.eval (cypress/e2e/bdd/tests/register/register.cy.js:20:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
@@ -86,7 +95,12 @@
         "keyword": "Scenario",
         "line": 13,
         "name": "Unable to Complete Registration with Missing Required Fields",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 12
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -96,7 +110,7 @@
             "name": "User navigates to the BlazeDemo registration page",
             "result": {
               "status": "passed",
-              "duration": 543000000
+              "duration": 390000000
             }
           },
           {
@@ -129,7 +143,7 @@
             "name": "User leaves one or more required fields empty",
             "result": {
               "status": "passed",
-              "duration": 174000000
+              "duration": 160000000
             }
           },
           {
@@ -139,7 +153,7 @@
             "name": "User clicks on Register button",
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 74000000
             }
           },
           {
@@ -149,7 +163,7 @@
             "name": "User should see an error message indicating at least one required field still needs to be filled out",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
             }
           }
         ]
@@ -159,7 +173,12 @@
         "keyword": "Scenario",
         "line": 20,
         "name": "Unable to Complete Registration with Invalid Email",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 19
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -169,7 +188,7 @@
             "name": "User navigates to the BlazeDemo registration page",
             "result": {
               "status": "passed",
-              "duration": 318000000
+              "duration": 474000000
             }
           },
           {
@@ -200,7 +219,7 @@
             "name": "User has filled in all the required fields with valid information except email address",
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 82000000
             }
           },
           {
@@ -235,7 +254,7 @@
             "name": "User enters an invalid email",
             "result": {
               "status": "passed",
-              "duration": 506000000
+              "duration": 453000000
             }
           },
           {
@@ -245,7 +264,7 @@
             "name": "User clicks on Register button",
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 75000000
             }
           },
           {
@@ -255,7 +274,7 @@
             "name": "User should see an error message indicating that the email address does not meet the requirements",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 2000000
             }
           }
         ]

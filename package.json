@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+        "regression-testing": "npx cypress run --browser chrome; node ./cypress/support/cucumber-html-reporter.js",
+        "smoke-testing": "npx cypress run --env TAGS=\"@smoke\" --browser chrome; node ./cypress/support/cucumber-html-reporter.js",
+        "sanity-testing": "npx cypress run --env TAGS=\"@sanity\" --browser chrome; node ./cypress/support/cucumber-html-reporter.js",
+        "defect-testing": "npx cypress run --env TAGS=\"@defect\" --browser chrome; node ./cypress/support/cucumber-html-reporter.js"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",

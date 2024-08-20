@@ -9,6 +9,9 @@ const options = {
   launchReport: true,
   ignoreBadJsonFile: true,
   scenarioTimestamp: true,
+  brandTitle: "BlazeDemo QA Automation Test Report (Cucumber)",
+  columnLayout: 1,
+  failedSummaryReport: true,
   metadata: {
     "App Version": "1.0.0",
     "Test Environment": "STAGING",
