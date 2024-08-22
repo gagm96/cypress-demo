@@ -31,7 +31,7 @@
             "name": "User navigates to the BlazeDemo flights page",
             "result": {
               "status": "passed",
-              "duration": 1221000000
+              "duration": 1501000000
             }
           },
           {
@@ -41,7 +41,7 @@
             "name": "User sees the dropdowns for selecting departure and destination cities",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 38000000
             }
           }
         ]
@@ -70,7 +70,7 @@
             "name": "User navigates to the BlazeDemo flights page",
             "result": {
               "status": "passed",
-              "duration": 329000000
+              "duration": 368000000
             }
           },
           {
@@ -80,7 +80,7 @@
             "name": "User sees the destination of the week link and is able to visit it",
             "result": {
               "status": "passed",
-              "duration": 687000000
+              "duration": 688000000
             }
           }
         ]
@@ -109,7 +109,7 @@
             "name": "User navigates to the BlazeDemo flights page",
             "result": {
               "status": "passed",
-              "duration": 272000000
+              "duration": 262000000
             }
           },
           {
@@ -119,7 +119,7 @@
             "name": "User selects a departure city",
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 131000000
             }
           },
           {
@@ -129,7 +129,7 @@
             "name": "User selects a destination city",
             "result": {
               "status": "passed",
-              "duration": 129000000
+              "duration": 132000000
             }
           },
           {
@@ -139,7 +139,7 @@
             "name": "User clicks on the Find Flights button",
             "result": {
               "status": "passed",
-              "duration": 304000000
+              "duration": 269000000
             }
           },
           {
@@ -149,7 +149,7 @@
             "name": "User should be redirected to the search results page displaying available flights for the selected route",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 6000000
             }
           }
         ]

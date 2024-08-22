@@ -22,7 +22,7 @@
             "name": "User is on the purchase page after successfully selecting a flight",
             "result": {
               "status": "passed",
-              "duration": 470000000
+              "duration": 681000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "User sees fields for name, address, city, state, ZIP code, and credit card information",
             "result": {
               "status": "passed",
-              "duration": 32000000
+              "duration": 45000000
             }
           }
         ]
@@ -52,7 +52,7 @@
             "name": "User is on the purchase page after successfully selecting a flight",
             "result": {
               "status": "passed",
-              "duration": 265000000
+              "duration": 278000000
             }
           },
           {
@@ -91,7 +91,7 @@
             "name": "User is on the purchase page after successfully selecting a flight",
             "result": {
               "status": "passed",
-              "duration": 331000000
+              "duration": 317000000
             }
           },
           {
@@ -101,7 +101,7 @@
             "name": "User fills out all required fields with valid information",
             "result": {
               "status": "passed",
-              "duration": 2952000000
+              "duration": 2906000000
             }
           },
           {
@@ -111,7 +111,7 @@
             "name": "User clicks Purchase Flight",
             "result": {
               "status": "passed",
-              "duration": 314000000
+              "duration": 365000000
             }
           },
           {
@@ -121,7 +121,7 @@
             "name": "User sees a confirmation message with the payment details",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 5000000
             }
           }
         ]
@@ -146,7 +146,7 @@
             "name": "User is on the purchase page after successfully selecting a flight",
             "result": {
               "status": "passed",
-              "duration": 284000000
+              "duration": 299000000
             }
           },
           {
@@ -156,7 +156,7 @@
             "name": "User fills out the form with invalid information",
             "result": {
               "status": "passed",
-              "duration": 2852000000
+              "duration": 2821000000
             }
           },
           {
@@ -166,7 +166,7 @@
             "name": "User clicks Purchase Flight",
             "result": {
               "status": "passed",
-              "duration": 307000000
+              "duration": 531000000
             }
           },
           {

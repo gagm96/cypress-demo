@@ -5,6 +5,8 @@ const options = {
   name: 'Test Results',
   jsonDir: './cypress/cucumber-json',
   output: './cypress/reports/html/cucumber_report.html',
+  screenshotsDirectory: 'screenshots/',
+  storeScreenshots: true,
   reportSuiteAsScenarios: true,
   scenarioTimestamp: true,
   launchReport: true,
@@ -24,3 +26,9 @@ const options = {
 };
 
 reporter.generate(options);
+
+let world = this;
+
+return driver.takeScreenshot().then((screenShot) => {
+    world.attach(screenShot, 'image/png');
+});

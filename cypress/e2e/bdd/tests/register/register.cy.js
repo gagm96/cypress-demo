@@ -22,7 +22,7 @@ Then("User should be redirected to a confirmation page", () => {
 
 When("User leaves one or more required fields empty", (datatable) => {
 	datatable.hashes().forEach((element) => {
-		register.enterFormFields({name: '', company: '', email: element.email, password: element.password, confirmpassword: element.confirmpassword});
+		register.enterFormFields({name: element.company, company: '', email: element.email, password: element.password, confirmpassword: element.confirmpassword});
 	});
 });
 

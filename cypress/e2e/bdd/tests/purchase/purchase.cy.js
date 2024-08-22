@@ -54,7 +54,7 @@ And("User clicks Purchase Flight", () => {
 	purchase.clickSubmitButton();
 });
 
-Then("User sees a confirmation message with the payment details", function () {
+Then("User sees a confirmation message with the payment details", () => {
     cy.location('pathname').should('eq', '/confirmation.php')
     cy.get('h1').contains('Thank you for your purchase today!');
 })
@@ -69,7 +69,7 @@ When('User fills out the form with invalid information', function () {
     }
 })
 
-Then("User sees validation errors indicating which fields are missing", function () {
+Then("User sees validation errors indicating which fields are missing", () => {
     cy.location('pathname').should('eq', '/purchase.php')
     cy.get('.purchase-error').should('exist');
 })

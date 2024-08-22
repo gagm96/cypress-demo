@@ -7,6 +7,7 @@ module.exports = defineConfig({
         omitFiltered: true,
         filterSpecs: true
     },
+    screenshotsFolder: "cypress/screenshots",
     baseUrl: "https://blazedemo.com",
     specPattern: "**/*.feature",
     fixturesFolder: "cypress/fixtures",

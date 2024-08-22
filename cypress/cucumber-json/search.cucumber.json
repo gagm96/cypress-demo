@@ -31,7 +31,7 @@
             "name": "User is on the search results page after successfully selecting a flight route to search",
             "result": {
               "status": "passed",
-              "duration": 1247000000
+              "duration": 634000000
             }
           },
           {
@@ -41,7 +41,7 @@
             "name": "User clicks Choose This Flight for a given flight",
             "result": {
               "status": "passed",
-              "duration": 535000000
+              "duration": 342000000
             }
           },
           {
@@ -51,7 +51,7 @@
             "name": "User is redirected to the purchase page",
             "result": {
               "status": "failed",
-              "duration": 4101000000,
+              "duration": 4113000000,
               "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Boston to New York' within the element: <h2> but never did.\n    at Context.eval (cypress/e2e/bdd/tests/search/search.cy.js:15:17)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }

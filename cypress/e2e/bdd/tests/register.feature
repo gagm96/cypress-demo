@@ -14,8 +14,8 @@ Feature: SIGN IN - As a new user, I want to register for an account so that I ca
     @sanity
     Scenario: Unable to Complete Registration with Missing Required Fields
         When User leaves one or more required fields empty
-        | name              | company | email                         | password  | confirmpassword |
-        | Unregistered User | Contoso | new-user@yopmail.com          | Password1 | Password1       |
+        | name              | email                         | password  | confirmpassword |
+        | Unregistered User | new-user@yopmail.com          | Password1 | Password1       |
         And User clicks on Register button
         Then User should see an error message indicating at least one required field still needs to be filled out
         

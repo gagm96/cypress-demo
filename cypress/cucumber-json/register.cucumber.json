@@ -10,16 +10,16 @@
       {
         "id": "sign-in---as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features;successful-user-registration",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 7,
         "name": "Successful User Registration",
         "tags": [
           {
             "name": "@smoke",
-            "line": 5
+            "line": 6
           },
           {
             "name": "@sanity",
-            "line": 5
+            "line": 6
           }
         ],
         "type": "scenario",
@@ -31,7 +31,7 @@
             "name": "User navigates to the BlazeDemo registration page",
             "result": {
               "status": "passed",
-              "duration": 767000000
+              "duration": 885000000
             }
           },
           {
@@ -60,31 +60,31 @@
               }
             ],
             "keyword": "When ",
-            "line": 7,
+            "line": 8,
             "name": "User fills in all required fields with valid information",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 21000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
+            "line": 11,
             "name": "User clicks on Register button",
             "result": {
               "status": "passed",
-              "duration": 664000000
+              "duration": 455000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
+            "line": 12,
             "name": "User should be redirected to a confirmation page",
             "result": {
               "status": "failed",
-              "duration": 4118000000,
+              "duration": 4092000000,
               "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.success-page`, but never found it.\n    at registerPage.verifySuccessfulRegistration (cypress/e2e/bdd/pages/registerPage.cy.js:50:32)\n    at Context.eval (cypress/e2e/bdd/tests/register/register.cy.js:20:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
@@ -93,12 +93,12 @@
       {
         "id": "sign-in---as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features;unable-to-complete-registration-with-missing-required-fields",
         "keyword": "Scenario",
-        "line": 13,
+        "line": 15,
         "name": "Unable to Complete Registration with Missing Required Fields",
         "tags": [
           {
             "name": "@sanity",
-            "line": 12
+            "line": 14
           }
         ],
         "type": "scenario",
@@ -110,7 +110,7 @@
             "name": "User navigates to the BlazeDemo registration page",
             "result": {
               "status": "passed",
-              "duration": 326000000
+              "duration": 523000000
             }
           },
           {
@@ -120,7 +120,6 @@
                   {
                     "cells": [
                       "name",
-                      "company",
                       "email",
                       "password",
                       "confirmpassword"
@@ -129,7 +128,6 @@
                   {
                     "cells": [
                       "Unregistered User",
-                      "Contoso",
                       "new-user@yopmail.com",
                       "Password1",
                       "Password1"
@@ -139,27 +137,27 @@
               }
             ],
             "keyword": "When ",
-            "line": 14,
+            "line": 16,
             "name": "User leaves one or more required fields empty",
             "result": {
               "status": "passed",
-              "duration": 167000000
+              "duration": 84000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
+            "line": 19,
             "name": "User clicks on Register button",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 76000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
+            "line": 20,
             "name": "User should see an error message indicating at least one required field still needs to be filled out",
             "result": {
               "status": "passed",
@@ -171,12 +169,12 @@
       {
         "id": "sign-in---as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features;unable-to-complete-registration-with-invalid-email",
         "keyword": "Scenario",
-        "line": 20,
+        "line": 23,
         "name": "Unable to Complete Registration with Invalid Email",
         "tags": [
           {
             "name": "@sanity",
-            "line": 19
+            "line": 22
           }
         ],
         "type": "scenario",
@@ -188,7 +186,7 @@
             "name": "User navigates to the BlazeDemo registration page",
             "result": {
               "status": "passed",
-              "duration": 355000000
+              "duration": 320000000
             }
           },
           {
@@ -215,11 +213,11 @@
               }
             ],
             "keyword": "When ",
-            "line": 21,
+            "line": 24,
             "name": "User has filled in all the required fields with valid information except email address",
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 82000000
             }
           },
           {
@@ -250,7 +248,7 @@
               }
             ],
             "keyword": "And ",
-            "line": 24,
+            "line": 27,
             "name": "User enters an invalid email",
             "result": {
               "status": "passed",
@@ -260,21 +258,21 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 27,
+            "line": 30,
             "name": "User clicks on Register button",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 75000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 28,
+            "line": 31,
             "name": "User should see an error message indicating that the email address does not meet the requirements",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 4000000
             }
           }
         ]
