@@ -1,5 +1,8 @@
 **Cypress Practice for BairesDev**
 
+**QA Engineer:**
+Gabriel Gonzalez
+
 **Steps:**
 1. Installed Cucumber Processor for BDD.
 2. Installed Cucumber (Gherkin) Full Support extension in Visual Studio Code for BDD.
