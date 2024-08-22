@@ -1,25 +1,25 @@
 [
   {
     "keyword": "Feature",
-    "name": "As a user, I want to select a route so that I can search for flights",
+    "name": "FLIGHTS - As a user I want to select a departure and destination city so that I can search for available flights",
     "line": 1,
-    "id": "as-a-user,-i-want-to-select-a-route-so-that-i-can-search-for-flights",
+    "id": "flights---as-a-user-i-want-to-select-a-departure-and-destination-city-so-that-i-can-search-for-available-flights",
     "tags": [],
     "uri": "flights.feature",
     "elements": [
       {
-        "id": "as-a-user,-i-want-to-select-a-route-so-that-i-can-search-for-flights;successful-flight-route-selection",
+        "id": "flights---as-a-user-i-want-to-select-a-departure-and-destination-city-so-that-i-can-search-for-available-flights;validate-presence-of-departure-and-destination-city-dropdowns",
         "keyword": "Scenario",
-        "line": 6,
-        "name": "Successful Flight Route Selection",
+        "line": 7,
+        "name": "Validate Presence of Departure and Destination City Dropdowns",
         "tags": [
           {
             "name": "@smoke",
-            "line": 5
+            "line": 6
           },
           {
             "name": "@sanity",
-            "line": 5
+            "line": 6
           }
         ],
         "type": "scenario",
@@ -30,45 +30,126 @@
             "line": 4,
             "name": "User navigates to the BlazeDemo flights page",
             "result": {
-              "status": "failed",
-              "duration": 227000000,
-              "error_message": "ReferenceError: login is not defined\n    at Context.eval (cypress/e2e/bdd/tests/flights/flights.cy.js:9:2)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "User selects a departure city",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "User selects a destination city",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "User clicks on the Find Flights button",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1221000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
+            "line": 8,
+            "name": "User sees the dropdowns for selecting departure and destination cities",
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "flights---as-a-user-i-want-to-select-a-departure-and-destination-city-so-that-i-can-search-for-available-flights;validate-presence-and-functionality-of-destination-of-the-week-link",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Validate Presence and Functionality of Destination of the Week Link",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 10
+          },
+          {
+            "name": "@sanity",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to the BlazeDemo flights page",
+            "result": {
+              "status": "passed",
+              "duration": 329000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "User sees the destination of the week link and is able to visit it",
+            "result": {
+              "status": "passed",
+              "duration": 687000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "flights---as-a-user-i-want-to-select-a-departure-and-destination-city-so-that-i-can-search-for-available-flights;successful-flight-route-selection",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Successful Flight Route Selection",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 14
+          },
+          {
+            "name": "@sanity",
+            "line": 14
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to the BlazeDemo flights page",
+            "result": {
+              "status": "passed",
+              "duration": 272000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "User selects a departure city",
+            "result": {
+              "status": "passed",
+              "duration": 130000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "User selects a destination city",
+            "result": {
+              "status": "passed",
+              "duration": 129000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "User clicks on the Find Flights button",
+            "result": {
+              "status": "passed",
+              "duration": 304000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
             "name": "User should be redirected to the search results page displaying available flights for the selected route",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5000000
             }
           }
         ]

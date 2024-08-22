@@ -1,0 +1,186 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "PURCHASE - As a user I want to enter my contact and billing information so that I can complete the purchase of a flight",
+    "line": 1,
+    "id": "purchase---as-a-user-i-want-to-enter-my-contact-and-billing-information-so-that-i-can-complete-the-purchase-of-a-flight",
+    "tags": [],
+    "uri": "purchase.feature",
+    "elements": [
+      {
+        "id": "purchase---as-a-user-i-want-to-enter-my-contact-and-billing-information-so-that-i-can-complete-the-purchase-of-a-flight;display-purchase-form",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Display Purchase Form",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the purchase page after successfully selecting a flight",
+            "result": {
+              "status": "passed",
+              "duration": 470000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "User sees fields for name, address, city, state, ZIP code, and credit card information",
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "purchase---as-a-user-i-want-to-enter-my-contact-and-billing-information-so-that-i-can-complete-the-purchase-of-a-flight;verify-flight-details-on-purchase-page",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Verify Flight Details on Purchase Page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the purchase page after successfully selecting a flight",
+            "result": {
+              "status": "passed",
+              "duration": 265000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "User sees the flight details selected including airline, flight number, price, and fees",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<h2>' to contain text 'São Paulo to Berlin', but the text was 'Your flight from TLV to SFO has been reserved.'\n    + expected - actual\n\n    -'Your flight from TLV to SFO has been reserved.'\n    +'São Paulo to Berlin'\n\n    at Context.eval (cypress/e2e/bdd/tests/purchase/purchase.cy.js:40:17)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "purchase---as-a-user-i-want-to-enter-my-contact-and-billing-information-so-that-i-can-complete-the-purchase-of-a-flight;submit-purchase-form-with-valid-information",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Submit Purchase Form with Valid Information",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 12
+          },
+          {
+            "name": "@sanity",
+            "line": 12
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the purchase page after successfully selecting a flight",
+            "result": {
+              "status": "passed",
+              "duration": 331000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User fills out all required fields with valid information",
+            "result": {
+              "status": "passed",
+              "duration": 2952000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User clicks Purchase Flight",
+            "result": {
+              "status": "passed",
+              "duration": 314000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "User sees a confirmation message with the payment details",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "purchase---as-a-user-i-want-to-enter-my-contact-and-billing-information-so-that-i-can-complete-the-purchase-of-a-flight;failed-to-submit-purchase-form-with-invalid-information",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Failed to Submit Purchase Form with Invalid Information",
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the purchase page after successfully selecting a flight",
+            "result": {
+              "status": "passed",
+              "duration": 284000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "User fills out the form with invalid information",
+            "result": {
+              "status": "passed",
+              "duration": 2852000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "User clicks Purchase Flight",
+            "result": {
+              "status": "passed",
+              "duration": 307000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "User sees validation errors indicating which fields are missing",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '/confirmation.php' to equal '/purchase.php'\n    + expected - actual\n\n    -'/confirmation.php'\n    +'/purchase.php'\n\n    at Context.eval (cypress/e2e/bdd/tests/purchase/purchase.cy.js:73:28)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

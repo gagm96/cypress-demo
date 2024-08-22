@@ -16,5 +16,14 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
+Cypress.on("uncaught:exception", (e, runnable) => {
+    console.log("error", e);
+    console.log("runnable", runnable);
+    if (e.message.includes("a is not a function")) {
+        return false;
+    } else if (e.message.includes("jQuery is not defined")) {
+        return false;
+    }
+});
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

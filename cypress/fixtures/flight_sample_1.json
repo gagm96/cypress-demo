@@ -1,0 +1,7 @@
+{
+    "flight": "UA954",
+    "price": 400,
+    "airline": "United",
+    "fromPort": "São Paulo",
+    "toPort": "Berlin"
+}

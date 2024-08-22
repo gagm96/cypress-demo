@@ -9,6 +9,7 @@ module.exports = defineConfig({
     },
     baseUrl: "https://blazedemo.com",
     specPattern: "**/*.feature",
+    fixturesFolder: "cypress/fixtures",
     setupNodeEvents(on, config) {
       on("file:preprocessor", cucumber());
     },

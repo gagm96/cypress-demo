@@ -1,0 +1,62 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "SEARCH - As a user I want to choose an available flight option so that I can book a trip",
+    "line": 1,
+    "id": "search---as-a-user-i-want-to-choose-an-available-flight-option-so-that-i-can-book-a-trip",
+    "tags": [],
+    "uri": "search.feature",
+    "elements": [
+      {
+        "id": "search---as-a-user-i-want-to-choose-an-available-flight-option-so-that-i-can-book-a-trip;choose-a-flight",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Choose a Flight",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 6
+          },
+          {
+            "name": "@sanity",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the search results page after successfully selecting a flight route to search",
+            "result": {
+              "status": "passed",
+              "duration": 1247000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User clicks Choose This Flight for a given flight",
+            "result": {
+              "status": "passed",
+              "duration": 535000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User is redirected to the purchase page",
+            "result": {
+              "status": "failed",
+              "duration": 4101000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Boston to New York' within the element: <h2> but never did.\n    at Context.eval (cypress/e2e/bdd/tests/search/search.cy.js:15:17)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

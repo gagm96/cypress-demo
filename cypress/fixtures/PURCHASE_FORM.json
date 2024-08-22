@@ -1,0 +1,12 @@
+{
+    "inputName": "Name",
+    "address": "Address",
+    "city": "City",
+    "state": "State",
+    "zipCode": "Zip Code",
+    "cardType": "Card Type",
+    "creditCardNumber": "Credit Card Number",
+    "creditCardMonth": "Month",
+    "creditCardYear": "Year",
+    "nameOnCard": "Name on Card"
+}

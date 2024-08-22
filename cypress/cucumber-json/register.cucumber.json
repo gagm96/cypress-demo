@@ -1,14 +1,14 @@
 [
   {
     "keyword": "Feature",
-    "name": "As a new user, I want to register for an account so that I can book flights and access additional features",
+    "name": "SIGN IN - As a new user, I want to register for an account so that I can book flights and access additional features",
     "line": 1,
-    "id": "as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features",
+    "id": "sign-in---as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features",
     "tags": [],
     "uri": "register.feature",
     "elements": [
       {
-        "id": "as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features;successful-user-registration",
+        "id": "sign-in---as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features;successful-user-registration",
         "keyword": "Scenario",
         "line": 6,
         "name": "Successful User Registration",
@@ -31,7 +31,7 @@
             "name": "User navigates to the BlazeDemo registration page",
             "result": {
               "status": "passed",
-              "duration": 2364000000
+              "duration": 767000000
             }
           },
           {
@@ -64,7 +64,7 @@
             "name": "User fills in all required fields with valid information",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 18000000
             }
           },
           {
@@ -74,7 +74,7 @@
             "name": "User clicks on Register button",
             "result": {
               "status": "passed",
-              "duration": 440000000
+              "duration": 664000000
             }
           },
           {
@@ -84,14 +84,14 @@
             "name": "User should be redirected to a confirmation page",
             "result": {
               "status": "failed",
-              "duration": 4071000000,
+              "duration": 4118000000,
               "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.success-page`, but never found it.\n    at registerPage.verifySuccessfulRegistration (cypress/e2e/bdd/pages/registerPage.cy.js:50:32)\n    at Context.eval (cypress/e2e/bdd/tests/register/register.cy.js:20:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
         ]
       },
       {
-        "id": "as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features;unable-to-complete-registration-with-missing-required-fields",
+        "id": "sign-in---as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features;unable-to-complete-registration-with-missing-required-fields",
         "keyword": "Scenario",
         "line": 13,
         "name": "Unable to Complete Registration with Missing Required Fields",
@@ -110,7 +110,7 @@
             "name": "User navigates to the BlazeDemo registration page",
             "result": {
               "status": "passed",
-              "duration": 390000000
+              "duration": 326000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "User leaves one or more required fields empty",
             "result": {
               "status": "passed",
-              "duration": 160000000
+              "duration": 167000000
             }
           },
           {
@@ -169,7 +169,7 @@
         ]
       },
       {
-        "id": "as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features;unable-to-complete-registration-with-invalid-email",
+        "id": "sign-in---as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features;unable-to-complete-registration-with-invalid-email",
         "keyword": "Scenario",
         "line": 20,
         "name": "Unable to Complete Registration with Invalid Email",
@@ -188,7 +188,7 @@
             "name": "User navigates to the BlazeDemo registration page",
             "result": {
               "status": "passed",
-              "duration": 474000000
+              "duration": 355000000
             }
           },
           {
@@ -219,7 +219,7 @@
             "name": "User has filled in all the required fields with valid information except email address",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 83000000
             }
           },
           {
@@ -254,7 +254,7 @@
             "name": "User enters an invalid email",
             "result": {
               "status": "passed",
-              "duration": 453000000
+              "duration": 466000000
             }
           },
           {
@@ -264,7 +264,7 @@
             "name": "User clicks on Register button",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 74000000
             }
           },
           {

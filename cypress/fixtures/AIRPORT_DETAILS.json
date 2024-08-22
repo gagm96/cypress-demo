@@ -1,0 +1,90 @@
+{
+    "fromPort": [
+        {
+            "city": "Paris",
+            "country": "France",
+            "continent": "Europe",
+            "airport_code": "CDG"
+        },
+        {
+            "city": "Philadelphia",
+            "country": "United States",
+            "continent": "North America",
+            "airport_code": "PHL"
+        },
+        {
+            "city": "Boston",
+            "country": "United States",
+            "continent": "North America",
+            "airport_code": "BOS"
+        },
+        {
+            "city": "Portland",
+            "country": "United States",
+            "continent": "North America",
+            "airport_code": "PDX"
+        },
+        {
+            "city": "San Diego",
+            "country": "United States",
+            "continent": "North America",
+            "airport_code": "SAN"
+        },
+        {
+            "city": "Mexico City",
+            "country": "Mexico",
+            "continent": "North America",
+            "airport_code": "MEX"
+        },
+        {
+            "city": "São Paulo",
+            "country": "Brazil",
+            "continent": "South America",
+            "airport_code": "GRU"
+        }
+    ],
+    "toPort": [
+        {
+            "city": "Buenos Aires",
+            "country": "Argentina",
+            "continent": "South America",
+            "airport_code": "EZE"
+        },
+        {
+            "city": "Rome",
+            "country": "Italy",
+            "continent": "Europe",
+            "airport_code": "FCO"
+        },
+        {
+            "city": "London",
+            "country": "United Kingdom",
+            "continent": "Europe",
+            "airport_code": "LHR"
+        },
+        {
+            "city": "Berlin",
+            "country": "Germany",
+            "continent": "Europe",
+            "airport_code": "BER"
+        },
+        {
+            "city": "New York",
+            "country": "United States",
+            "continent": "North America",
+            "airport_code": "JFK"
+        },
+        {
+            "city": "Dublin",
+            "country": "Ireland",
+            "continent": "Europe",
+            "airport_code": "DUB"
+        },
+        {
+            "city": "Cairo",
+            "country": "Egypt",
+            "continent": "Africa",
+            "airport_code": "CAI"
+        }
+    ]
+}

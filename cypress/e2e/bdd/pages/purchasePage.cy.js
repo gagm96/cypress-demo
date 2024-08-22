@@ -5,6 +5,11 @@ class purchasePage {
 		);
 	}
 
+    clickSubmitButton() {
+        cy.get('[type="submit"]').click();
+        return this;
+    }
+
 }
 
 const purchase = new purchasePage();

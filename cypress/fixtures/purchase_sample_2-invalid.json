@@ -1,0 +1,12 @@
+{
+    "inputName": "John Doe",
+    "address": "2520 Travis Street",
+    "city": "Miami",
+    "state": "FL",
+    "zipCode": "33128",
+    "cardType": "VISA",
+    "creditCardNumber": "invalidCard",
+    "creditCardMonth": "13",
+    "creditCardYear": "1999",
+    "nameOnCard": "John Smith"
+}

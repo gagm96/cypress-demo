@@ -1,34 +1,37 @@
 /// <reference types="cypress" />
 import {Given, When, Then, And} from "cypress-cucumber-preprocessor/steps";
 import flights from "../../pages/flightsPage.cy";
-import reserve from "../../pages/reservePage.cy";
-import purchase from "../../pages/purchasePage.cy";
-import confirmation from "../../pages/confirmationPage.cy";
 
 Given("User navigates to the BlazeDemo flights page", () => {
-  login.enterURL();
+    flights.enterURL();
 });
 
-// When("User enters valid credentials", (datatable) => {
-//   datatable.hashes().forEach((element) => {
-//     login.enterUserNamePassword(element.validemail, element.validpassword);
-//   });
-// });
+Then("User sees the dropdowns for selecting departure and destination cities", () => {
+    cy.getByIndex('h2',0).contains('Choose your departure city:').should('be.visible');
+    cy.getByName('fromPort').should('be.visible');
+    cy.getByIndex('h2',1).contains('Choose your destination city:').should('be.visible');
+    cy.getByName('toPort').should('be.visible');
+});
 
-// And("User clicks on Login button", () => {
-//   login.clickSubmitButton();
-// });
+Then("User sees the destination of the week link and is able to visit it", () => {
+    cy.get('a[href]').contains('destination of the week').should('be.visible').and('have.attr', 'href', 'vacation.html').click()
+    cy.location("pathname").should("equal", '/vacation.html')
+});
 
-// Then("User is redirected to their profile", () => {
-//   login.verifySuccessfulLogin();
-// });
+When("User selects a departure city", () => {
+    flights.selectCity("from","Boston");
+});
 
-// When("User enters invalid credentials", (datatable) => {
-//   datatable.hashes().forEach((element) => {
-//     login.enterUserNamePassword(element.invalidemail, element.invalidpassword);
-//   });
-// });
+And("User selects a destination city", () => {
+    flights.selectCity("to","New York");
+});
 
-// Then("User should see an error message indicating the credentials are incorrect", () => {
-//   login.verifyFailedlLogin();
-// });
+And("User clicks on the Find Flights button", () => {
+    flights.clickSubmitButton();
+});
+
+Then("User should be redirected to the search results page displaying available flights for the selected route", () => {
+    cy.location("pathname").should("equal", '/reserve.php');
+    cy.get('h3').contains("Boston to New York");
+
+});

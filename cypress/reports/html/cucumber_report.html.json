@@ -1,25 +1,75 @@
 [
   {
     "keyword": "Feature",
-    "name": "As a user, I want to select a route so that I can search for flights",
+    "name": "As a user I want to get confirmation details for my flight so that I can have a record of my purchase and travel details",
     "line": 1,
-    "id": "as-a-user,-i-want-to-select-a-route-so-that-i-can-search-for-flights",
+    "id": "as-a-user-i-want-to-get-confirmation-details-for-my-flight-so-that-i-can-have-a-record-of-my-purchase-and-travel-details",
+    "tags": [],
+    "uri": "confirmation.feature",
+    "elements": [
+      {
+        "id": "as-a-user-i-want-to-get-confirmation-details-for-my-flight-so-that-i-can-have-a-record-of-my-purchase-and-travel-details;display-payment-confirmation",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Display Payment Confirmation",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 6
+          },
+          {
+            "name": "@sanity",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the confirmation page after successfully completing the purchase",
+            "result": {
+              "status": "passed",
+              "duration": 312000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "User sees a confirmation message with the payment details",
+            "result": {
+              "status": "undefined",
+              "duration": 2000000
+            }
+          }
+        ],
+        "retried": null
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "FLIGHTS - As a user I want to select a departure and destination city so that I can search for available flights",
+    "line": 1,
+    "id": "flights---as-a-user-i-want-to-select-a-departure-and-destination-city-so-that-i-can-search-for-available-flights",
     "tags": [],
     "uri": "flights.feature",
     "elements": [
       {
-        "id": "as-a-user,-i-want-to-select-a-route-so-that-i-can-search-for-flights;successful-flight-route-selection",
+        "id": "flights---as-a-user-i-want-to-select-a-departure-and-destination-city-so-that-i-can-search-for-available-flights;validate-presence-of-departure-and-destination-city-dropdowns",
         "keyword": "Scenario",
-        "line": 6,
-        "name": "Successful Flight Route Selection",
+        "line": 7,
+        "name": "Validate Presence of Departure and Destination City Dropdowns",
         "tags": [
           {
             "name": "@smoke",
-            "line": 5
+            "line": 6
           },
           {
             "name": "@sanity",
-            "line": 5
+            "line": 6
           }
         ],
         "type": "scenario",
@@ -30,45 +80,128 @@
             "line": 4,
             "name": "User navigates to the BlazeDemo flights page",
             "result": {
-              "status": "failed",
-              "duration": 227000000,
-              "error_message": "ReferenceError: login is not defined\n    at Context.eval (cypress/e2e/bdd/tests/flights/flights.cy.js:9:2)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "User selects a departure city",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "User selects a destination city",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "User clicks on the Find Flights button",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1221000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
+            "line": 8,
+            "name": "User sees the dropdowns for selecting departure and destination cities",
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          }
+        ],
+        "retried": null
+      },
+      {
+        "id": "flights---as-a-user-i-want-to-select-a-departure-and-destination-city-so-that-i-can-search-for-available-flights;validate-presence-and-functionality-of-destination-of-the-week-link",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Validate Presence and Functionality of Destination of the Week Link",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 10
+          },
+          {
+            "name": "@sanity",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to the BlazeDemo flights page",
+            "result": {
+              "status": "passed",
+              "duration": 329000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "User sees the destination of the week link and is able to visit it",
+            "result": {
+              "status": "passed",
+              "duration": 687000000
+            }
+          }
+        ],
+        "retried": null
+      },
+      {
+        "id": "flights---as-a-user-i-want-to-select-a-departure-and-destination-city-so-that-i-can-search-for-available-flights;successful-flight-route-selection",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Successful Flight Route Selection",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 14
+          },
+          {
+            "name": "@sanity",
+            "line": 14
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to the BlazeDemo flights page",
+            "result": {
+              "status": "passed",
+              "duration": 272000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "User selects a departure city",
+            "result": {
+              "status": "passed",
+              "duration": 130000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "User selects a destination city",
+            "result": {
+              "status": "passed",
+              "duration": 129000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "User clicks on the Find Flights button",
+            "result": {
+              "status": "passed",
+              "duration": 304000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
             "name": "User should be redirected to the search results page displaying available flights for the selected route",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5000000
             }
           }
         ],
@@ -78,14 +211,14 @@
   },
   {
     "keyword": "Feature",
-    "name": "As a registered user, I want to log in to my account with my credentials so that I can access my profile and personalized features",
+    "name": "LOGIN - As a registered user, I want to log in to my account with my credentials so that I can access my profile and personalized features",
     "line": 1,
-    "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features",
+    "id": "login---as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features",
     "tags": [],
     "uri": "login.feature",
     "elements": [
       {
-        "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;successful-login-with-valid-credentials",
+        "id": "login---as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;successful-login-with-valid-credentials",
         "keyword": "Scenario",
         "line": 6,
         "name": "Successful Login with Valid Credentials",
@@ -108,7 +241,7 @@
             "name": "User navigates to the BlazeDemo login page",
             "result": {
               "status": "passed",
-              "duration": 1582000000
+              "duration": 1596000000
             }
           },
           {
@@ -135,7 +268,7 @@
             "name": "User enters valid credentials",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 16000000
             }
           },
           {
@@ -145,7 +278,7 @@
             "name": "User clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 361000000
+              "duration": 418000000
             }
           },
           {
@@ -155,7 +288,7 @@
             "name": "User is redirected to their profile",
             "result": {
               "status": "failed",
-              "duration": 4104000000,
+              "duration": 4185000000,
               "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.success-page`, but never found it.\n    at LoginPage.verifySuccessfulLogin (cypress/e2e/bdd/pages/loginPage.cy.js:52:32)\n    at Context.eval (cypress/e2e/bdd/tests/login/login.cy.js:27:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
@@ -163,7 +296,7 @@
         "retried": null
       },
       {
-        "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;failed-login-with-invalid-credentials",
+        "id": "login---as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;failed-login-with-invalid-credentials",
         "keyword": "Scenario",
         "line": 13,
         "name": "Failed Login with Invalid Credentials",
@@ -182,7 +315,7 @@
             "name": "User navigates to the BlazeDemo login page",
             "result": {
               "status": "passed",
-              "duration": 300000000
+              "duration": 603000000
             }
           },
           {
@@ -209,7 +342,7 @@
             "name": "User enters invalid credentials",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 3000000
             }
           },
           {
@@ -219,7 +352,7 @@
             "name": "User clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 295000000
+              "duration": 284000000
             }
           },
           {
@@ -236,7 +369,7 @@
         "retried": null
       },
       {
-        "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;unable-to-complete-login-with-invalid-email",
+        "id": "login---as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;unable-to-complete-login-with-invalid-email",
         "keyword": "Scenario",
         "line": 20,
         "name": "Unable to Complete Login with Invalid Email",
@@ -255,7 +388,7 @@
             "name": "User navigates to the BlazeDemo login page",
             "result": {
               "status": "passed",
-              "duration": 294000000
+              "duration": 452000000
             }
           },
           {
@@ -280,7 +413,7 @@
             "name": "User enters a valid password",
             "result": {
               "status": "passed",
-              "duration": 85000000
+              "duration": 93000000
             }
           },
           {
@@ -315,7 +448,7 @@
             "name": "User enters an invalid email",
             "result": {
               "status": "passed",
-              "duration": 459000000
+              "duration": 460000000
             }
           },
           {
@@ -325,7 +458,7 @@
             "name": "User clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 75000000
             }
           },
           {
@@ -342,7 +475,7 @@
         "retried": null
       },
       {
-        "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;successful-login-with-valid-credentials-and-remember-me-enabled",
+        "id": "login---as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;successful-login-with-valid-credentials-and-remember-me-enabled",
         "keyword": "Scenario",
         "line": 30,
         "name": "Successful Login with Valid Credentials and Remember Me Enabled",
@@ -355,7 +488,8 @@
             "line": 4,
             "name": "User navigates to the BlazeDemo login page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 398000000
             }
           },
           {
@@ -381,7 +515,8 @@
             "line": 31,
             "name": "User enters valid credentials",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3000000
             }
           },
           {
@@ -390,7 +525,8 @@
             "line": 34,
             "name": "User checks the Remember Me checkbox",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 83000000
             }
           },
           {
@@ -399,7 +535,8 @@
             "line": 35,
             "name": "User clicks on Login button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 250000000
             }
           },
           {
@@ -408,14 +545,15 @@
             "line": 36,
             "name": "User is redirected to their profile",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.success-page`, but never found it.\n    at LoginPage.verifySuccessfulLogin (cypress/e2e/bdd/pages/loginPage.cy.js:52:32)\n    at Context.eval (cypress/e2e/bdd/tests/login/login.cy.js:27:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
         ],
         "retried": null
       },
       {
-        "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;navigate-to-the-reset-password-page",
+        "id": "login---as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;navigate-to-the-reset-password-page",
         "keyword": "Scenario",
         "line": 38,
         "name": "Navigate to the Reset Password Page",
@@ -428,7 +566,8 @@
             "line": 4,
             "name": "User navigates to the BlazeDemo login page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 367000000
             }
           },
           {
@@ -437,7 +576,8 @@
             "line": 39,
             "name": "User clicks on the Forgot Your Password? link",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 426000000
             }
           },
           {
@@ -446,7 +586,8 @@
             "line": 40,
             "name": "User is redirected to the Reset Password page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2000000
             }
           }
         ],
@@ -456,14 +597,14 @@
   },
   {
     "keyword": "Feature",
-    "name": "As a user who forgot my password, I want to reset my password so that I can regain access to my account",
+    "name": "PASSWORD RESET - As a user who forgot my password, I want to reset my password so that I can regain access to my account",
     "line": 1,
-    "id": "as-a-user-who-forgot-my-password,-i-want-to-reset-my-password-so-that-i-can-regain-access-to-my-account",
+    "id": "password-reset---as-a-user-who-forgot-my-password,-i-want-to-reset-my-password-so-that-i-can-regain-access-to-my-account",
     "tags": [],
     "uri": "passwordReset.feature",
     "elements": [
       {
-        "id": "as-a-user-who-forgot-my-password,-i-want-to-reset-my-password-so-that-i-can-regain-access-to-my-account;successful-password-reset-request",
+        "id": "password-reset---as-a-user-who-forgot-my-password,-i-want-to-reset-my-password-so-that-i-can-regain-access-to-my-account;successful-password-reset-request",
         "keyword": "Scenario",
         "line": 6,
         "name": "Successful Password Reset Request",
@@ -482,7 +623,7 @@
             "name": "User is in to the BlazeDemo reset password page",
             "result": {
               "status": "passed",
-              "duration": 689000000
+              "duration": 827000000
             }
           },
           {
@@ -507,7 +648,7 @@
             "name": "User enters a registered email",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 11000000
             }
           },
           {
@@ -517,7 +658,7 @@
             "name": "User clicks on Send Password Reset Link button",
             "result": {
               "status": "passed",
-              "duration": 386000000
+              "duration": 413000000
             }
           },
           {
@@ -527,7 +668,7 @@
             "name": "User should be redirected to a confirmation page indicating that a password reset link has been sent to their email",
             "result": {
               "status": "failed",
-              "duration": 4106000000,
+              "duration": 4069000000,
               "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.success-message`, but never found it.\n    at passwordResetPage.verifyPasswordResetRequest (cypress/e2e/bdd/pages/passwordResetPage.cy.js:42:35)\n    at Context.eval (cypress/e2e/bdd/tests/passwordReset/passwordReset.cy.js:20:15)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
@@ -535,7 +676,7 @@
         "retried": null
       },
       {
-        "id": "as-a-user-who-forgot-my-password,-i-want-to-reset-my-password-so-that-i-can-regain-access-to-my-account;failed-password-reset-request-with-unregistered-email",
+        "id": "password-reset---as-a-user-who-forgot-my-password,-i-want-to-reset-my-password-so-that-i-can-regain-access-to-my-account;failed-password-reset-request-with-unregistered-email",
         "keyword": "Scenario",
         "line": 13,
         "name": "Failed Password Reset Request with Unregistered Email",
@@ -554,7 +695,7 @@
             "name": "User is in to the BlazeDemo reset password page",
             "result": {
               "status": "passed",
-              "duration": 313000000
+              "duration": 443000000
             }
           },
           {
@@ -589,7 +730,7 @@
             "name": "User clicks on Send Password Reset Link button",
             "result": {
               "status": "passed",
-              "duration": 270000000
+              "duration": 420000000
             }
           },
           {
@@ -606,7 +747,7 @@
         "retried": null
       },
       {
-        "id": "as-a-user-who-forgot-my-password,-i-want-to-reset-my-password-so-that-i-can-regain-access-to-my-account;unable-to-complete-password-reset-request-with-email-field-empty",
+        "id": "password-reset---as-a-user-who-forgot-my-password,-i-want-to-reset-my-password-so-that-i-can-regain-access-to-my-account;unable-to-complete-password-reset-request-with-email-field-empty",
         "keyword": "Scenario",
         "line": 20,
         "name": "Unable to Complete Password Reset Request with Email Field Empty",
@@ -625,7 +766,7 @@
             "name": "User is in to the BlazeDemo reset password page",
             "result": {
               "status": "passed",
-              "duration": 352000000
+              "duration": 321000000
             }
           },
           {
@@ -650,7 +791,7 @@
             "name": "User leaves the email field empty",
             "result": {
               "status": "passed",
-              "duration": 91000000
+              "duration": 85000000
             }
           },
           {
@@ -670,14 +811,14 @@
             "name": "User should see an error message indicating that the email field is required",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 76000000
             }
           }
         ],
         "retried": null
       },
       {
-        "id": "as-a-user-who-forgot-my-password,-i-want-to-reset-my-password-so-that-i-can-regain-access-to-my-account;defect---successful-password-reset-request-must-not-result-in-error-409-page-expired",
+        "id": "password-reset---as-a-user-who-forgot-my-password,-i-want-to-reset-my-password-so-that-i-can-regain-access-to-my-account;defect---successful-password-reset-request-must-not-result-in-error-409-page-expired",
         "keyword": "Scenario",
         "line": 27,
         "name": "Defect - Successful Password Reset Request Must Not Result in Error 409 Page Expired",
@@ -695,7 +836,8 @@
             "line": 4,
             "name": "User is in to the BlazeDemo reset password page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 552000000
             }
           },
           {
@@ -719,7 +861,8 @@
             "line": 28,
             "name": "User enters a registered email",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2000000
             }
           },
           {
@@ -728,7 +871,8 @@
             "line": 31,
             "name": "User clicks on Send Password Reset Link button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 284000000
             }
           },
           {
@@ -737,14 +881,15 @@
             "line": 32,
             "name": "User should not get a Page Expired Error 409",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.password-reset-request-error`, but never found it.\n    at passwordResetPage.verifyFailedPasswordResetRequest (cypress/e2e/bdd/pages/passwordResetPage.cy.js:46:48)\n    at Context.eval (cypress/e2e/bdd/tests/passwordReset/passwordReset.cy.js:47:15)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
         ],
         "retried": null
       },
       {
-        "id": "as-a-user-who-forgot-my-password,-i-want-to-reset-my-password-so-that-i-can-regain-access-to-my-account;unable-to-complete-password-reset-request-with-invalid-email",
+        "id": "password-reset---as-a-user-who-forgot-my-password,-i-want-to-reset-my-password-so-that-i-can-regain-access-to-my-account;unable-to-complete-password-reset-request-with-invalid-email",
         "keyword": "Scenario",
         "line": 34,
         "name": "Unable to Complete Password Reset Request with Invalid Email",
@@ -763,7 +908,7 @@
             "name": "User is in to the BlazeDemo reset password page",
             "result": {
               "status": "passed",
-              "duration": 351000000
+              "duration": 289000000
             }
           },
           {
@@ -798,7 +943,7 @@
             "name": "User enters an invalid email",
             "result": {
               "status": "passed",
-              "duration": 461000000
+              "duration": 469000000
             }
           },
           {
@@ -818,7 +963,7 @@
             "name": "User should see an error message indicating that the email address does not meet the requirements",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 5000000
             }
           }
         ],
@@ -828,14 +973,201 @@
   },
   {
     "keyword": "Feature",
-    "name": "As a new user, I want to register for an account so that I can book flights and access additional features",
+    "name": "PURCHASE - As a user I want to enter my contact and billing information so that I can complete the purchase of a flight",
     "line": 1,
-    "id": "as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features",
+    "id": "purchase---as-a-user-i-want-to-enter-my-contact-and-billing-information-so-that-i-can-complete-the-purchase-of-a-flight",
+    "tags": [],
+    "uri": "purchase.feature",
+    "elements": [
+      {
+        "id": "purchase---as-a-user-i-want-to-enter-my-contact-and-billing-information-so-that-i-can-complete-the-purchase-of-a-flight;display-purchase-form",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Display Purchase Form",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the purchase page after successfully selecting a flight",
+            "result": {
+              "status": "passed",
+              "duration": 609000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "User sees fields for name, address, city, state, ZIP code, and credit card information",
+            "result": {
+              "status": "passed",
+              "duration": 38000000
+            }
+          }
+        ],
+        "retried": null
+      },
+      {
+        "id": "purchase---as-a-user-i-want-to-enter-my-contact-and-billing-information-so-that-i-can-complete-the-purchase-of-a-flight;verify-flight-details-on-purchase-page",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Verify Flight Details on Purchase Page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the purchase page after successfully selecting a flight",
+            "result": {
+              "status": "passed",
+              "duration": 436000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "User sees the flight details selected including airline, flight number, price, and fees",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<h2>' to contain text 'São Paulo to Berlin', but the text was 'Your flight from TLV to SFO has been reserved.'\n    + expected - actual\n\n    -'Your flight from TLV to SFO has been reserved.'\n    +'São Paulo to Berlin'\n\n    at Context.eval (cypress/e2e/bdd/tests/purchase/purchase.cy.js:40:17)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ],
+        "retried": null
+      },
+      {
+        "id": "purchase---as-a-user-i-want-to-enter-my-contact-and-billing-information-so-that-i-can-complete-the-purchase-of-a-flight;submit-purchase-form-with-valid-information",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Submit Purchase Form with Valid Information",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 12
+          },
+          {
+            "name": "@sanity",
+            "line": 12
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the purchase page after successfully selecting a flight",
+            "result": {
+              "status": "passed",
+              "duration": 475000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User fills out all required fields with valid information",
+            "result": {
+              "status": "passed",
+              "duration": 2873000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User clicks Purchase Flight",
+            "result": {
+              "status": "passed",
+              "duration": 354000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "User sees a confirmation message with the payment details",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ],
+        "retried": null
+      },
+      {
+        "id": "purchase---as-a-user-i-want-to-enter-my-contact-and-billing-information-so-that-i-can-complete-the-purchase-of-a-flight;failed-to-submit-purchase-form-with-invalid-information",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Failed to Submit Purchase Form with Invalid Information",
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the purchase page after successfully selecting a flight",
+            "result": {
+              "status": "passed",
+              "duration": 404000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "User fills out the form with invalid information",
+            "result": {
+              "status": "passed",
+              "duration": 2770000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "User clicks Purchase Flight",
+            "result": {
+              "status": "passed",
+              "duration": 290000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "User sees validation errors indicating which fields are missing",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "retried": null
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "SIGN IN - As a new user, I want to register for an account so that I can book flights and access additional features",
+    "line": 1,
+    "id": "sign-in---as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features",
     "tags": [],
     "uri": "register.feature",
     "elements": [
       {
-        "id": "as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features;successful-user-registration",
+        "id": "sign-in---as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features;successful-user-registration",
         "keyword": "Scenario",
         "line": 6,
         "name": "Successful User Registration",
@@ -858,7 +1190,7 @@
             "name": "User navigates to the BlazeDemo registration page",
             "result": {
               "status": "passed",
-              "duration": 2364000000
+              "duration": 767000000
             }
           },
           {
@@ -891,7 +1223,7 @@
             "name": "User fills in all required fields with valid information",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 18000000
             }
           },
           {
@@ -901,7 +1233,7 @@
             "name": "User clicks on Register button",
             "result": {
               "status": "passed",
-              "duration": 440000000
+              "duration": 664000000
             }
           },
           {
@@ -911,7 +1243,7 @@
             "name": "User should be redirected to a confirmation page",
             "result": {
               "status": "failed",
-              "duration": 4071000000,
+              "duration": 4118000000,
               "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.success-page`, but never found it.\n    at registerPage.verifySuccessfulRegistration (cypress/e2e/bdd/pages/registerPage.cy.js:50:32)\n    at Context.eval (cypress/e2e/bdd/tests/register/register.cy.js:20:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
@@ -919,7 +1251,7 @@
         "retried": null
       },
       {
-        "id": "as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features;unable-to-complete-registration-with-missing-required-fields",
+        "id": "sign-in---as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features;unable-to-complete-registration-with-missing-required-fields",
         "keyword": "Scenario",
         "line": 13,
         "name": "Unable to Complete Registration with Missing Required Fields",
@@ -938,7 +1270,7 @@
             "name": "User navigates to the BlazeDemo registration page",
             "result": {
               "status": "passed",
-              "duration": 390000000
+              "duration": 326000000
             }
           },
           {
@@ -971,7 +1303,7 @@
             "name": "User leaves one or more required fields empty",
             "result": {
               "status": "passed",
-              "duration": 160000000
+              "duration": 167000000
             }
           },
           {
@@ -998,7 +1330,7 @@
         "retried": null
       },
       {
-        "id": "as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features;unable-to-complete-registration-with-invalid-email",
+        "id": "sign-in---as-a-new-user,-i-want-to-register-for-an-account-so-that-i-can-book-flights-and-access-additional-features;unable-to-complete-registration-with-invalid-email",
         "keyword": "Scenario",
         "line": 20,
         "name": "Unable to Complete Registration with Invalid Email",
@@ -1017,7 +1349,7 @@
             "name": "User navigates to the BlazeDemo registration page",
             "result": {
               "status": "passed",
-              "duration": 474000000
+              "duration": 355000000
             }
           },
           {
@@ -1048,7 +1380,7 @@
             "name": "User has filled in all the required fields with valid information except email address",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 83000000
             }
           },
           {
@@ -1083,7 +1415,7 @@
             "name": "User enters an invalid email",
             "result": {
               "status": "passed",
-              "duration": 453000000
+              "duration": 466000000
             }
           },
           {
@@ -1093,7 +1425,7 @@
             "name": "User clicks on Register button",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 74000000
             }
           },
           {
@@ -1104,6 +1436,67 @@
             "result": {
               "status": "passed",
               "duration": 2000000
+            }
+          }
+        ],
+        "retried": null
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "SEARCH - As a user I want to choose an available flight option so that I can book a trip",
+    "line": 1,
+    "id": "search---as-a-user-i-want-to-choose-an-available-flight-option-so-that-i-can-book-a-trip",
+    "tags": [],
+    "uri": "search.feature",
+    "elements": [
+      {
+        "id": "search---as-a-user-i-want-to-choose-an-available-flight-option-so-that-i-can-book-a-trip;choose-a-flight",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Choose a Flight",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 6
+          },
+          {
+            "name": "@sanity",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the search results page after successfully selecting a flight route to search",
+            "result": {
+              "status": "passed",
+              "duration": 1247000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User clicks Choose This Flight for a given flight",
+            "result": {
+              "status": "passed",
+              "duration": 535000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User is redirected to the purchase page",
+            "result": {
+              "status": "failed",
+              "duration": 4101000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Boston to New York' within the element: <h2> but never did.\n    at Context.eval (cypress/e2e/bdd/tests/search/search.cy.js:15:17)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
         ],

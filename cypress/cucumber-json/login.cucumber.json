@@ -1,14 +1,14 @@
 [
   {
     "keyword": "Feature",
-    "name": "As a registered user, I want to log in to my account with my credentials so that I can access my profile and personalized features",
+    "name": "LOGIN - As a registered user, I want to log in to my account with my credentials so that I can access my profile and personalized features",
     "line": 1,
-    "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features",
+    "id": "login---as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features",
     "tags": [],
     "uri": "login.feature",
     "elements": [
       {
-        "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;successful-login-with-valid-credentials",
+        "id": "login---as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;successful-login-with-valid-credentials",
         "keyword": "Scenario",
         "line": 6,
         "name": "Successful Login with Valid Credentials",
@@ -31,7 +31,7 @@
             "name": "User navigates to the BlazeDemo login page",
             "result": {
               "status": "passed",
-              "duration": 1582000000
+              "duration": 1596000000
             }
           },
           {
@@ -58,7 +58,7 @@
             "name": "User enters valid credentials",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 16000000
             }
           },
           {
@@ -68,7 +68,7 @@
             "name": "User clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 361000000
+              "duration": 418000000
             }
           },
           {
@@ -78,14 +78,14 @@
             "name": "User is redirected to their profile",
             "result": {
               "status": "failed",
-              "duration": 4104000000,
+              "duration": 4185000000,
               "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.success-page`, but never found it.\n    at LoginPage.verifySuccessfulLogin (cypress/e2e/bdd/pages/loginPage.cy.js:52:32)\n    at Context.eval (cypress/e2e/bdd/tests/login/login.cy.js:27:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
         ]
       },
       {
-        "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;failed-login-with-invalid-credentials",
+        "id": "login---as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;failed-login-with-invalid-credentials",
         "keyword": "Scenario",
         "line": 13,
         "name": "Failed Login with Invalid Credentials",
@@ -104,7 +104,7 @@
             "name": "User navigates to the BlazeDemo login page",
             "result": {
               "status": "passed",
-              "duration": 300000000
+              "duration": 603000000
             }
           },
           {
@@ -131,7 +131,7 @@
             "name": "User enters invalid credentials",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 3000000
             }
           },
           {
@@ -141,7 +141,7 @@
             "name": "User clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 295000000
+              "duration": 284000000
             }
           },
           {
@@ -157,7 +157,7 @@
         ]
       },
       {
-        "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;unable-to-complete-login-with-invalid-email",
+        "id": "login---as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;unable-to-complete-login-with-invalid-email",
         "keyword": "Scenario",
         "line": 20,
         "name": "Unable to Complete Login with Invalid Email",
@@ -176,7 +176,7 @@
             "name": "User navigates to the BlazeDemo login page",
             "result": {
               "status": "passed",
-              "duration": 294000000
+              "duration": 452000000
             }
           },
           {
@@ -201,7 +201,7 @@
             "name": "User enters a valid password",
             "result": {
               "status": "passed",
-              "duration": 85000000
+              "duration": 93000000
             }
           },
           {
@@ -236,7 +236,7 @@
             "name": "User enters an invalid email",
             "result": {
               "status": "passed",
-              "duration": 459000000
+              "duration": 460000000
             }
           },
           {
@@ -246,7 +246,7 @@
             "name": "User clicks on Login button",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 75000000
             }
           },
           {
@@ -262,7 +262,7 @@
         ]
       },
       {
-        "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;successful-login-with-valid-credentials-and-remember-me-enabled",
+        "id": "login---as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;successful-login-with-valid-credentials-and-remember-me-enabled",
         "keyword": "Scenario",
         "line": 30,
         "name": "Successful Login with Valid Credentials and Remember Me Enabled",
@@ -275,7 +275,8 @@
             "line": 4,
             "name": "User navigates to the BlazeDemo login page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 398000000
             }
           },
           {
@@ -301,7 +302,8 @@
             "line": 31,
             "name": "User enters valid credentials",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3000000
             }
           },
           {
@@ -310,7 +312,8 @@
             "line": 34,
             "name": "User checks the Remember Me checkbox",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 83000000
             }
           },
           {
@@ -319,7 +322,8 @@
             "line": 35,
             "name": "User clicks on Login button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 250000000
             }
           },
           {
@@ -328,13 +332,14 @@
             "line": 36,
             "name": "User is redirected to their profile",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.success-page`, but never found it.\n    at LoginPage.verifySuccessfulLogin (cypress/e2e/bdd/pages/loginPage.cy.js:52:32)\n    at Context.eval (cypress/e2e/bdd/tests/login/login.cy.js:27:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
         ]
       },
       {
-        "id": "as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;navigate-to-the-reset-password-page",
+        "id": "login---as-a-registered-user,-i-want-to-log-in-to-my-account-with-my-credentials-so-that-i-can-access-my-profile-and-personalized-features;navigate-to-the-reset-password-page",
         "keyword": "Scenario",
         "line": 38,
         "name": "Navigate to the Reset Password Page",
@@ -347,7 +352,8 @@
             "line": 4,
             "name": "User navigates to the BlazeDemo login page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 367000000
             }
           },
           {
@@ -356,7 +362,8 @@
             "line": 39,
             "name": "User clicks on the Forgot Your Password? link",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 426000000
             }
           },
           {
@@ -365,7 +372,8 @@
             "line": 40,
             "name": "User is redirected to the Reset Password page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2000000
             }
           }
         ]
