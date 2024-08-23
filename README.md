@@ -1,5 +1,3 @@
-**Cypress Practice for BairesDev**
-
 **QA Engineer:**
 Gabriel Gonzalez
 
