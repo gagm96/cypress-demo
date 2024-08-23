@@ -23,7 +23,7 @@ report.generate({
         title: 'Report Information',
         data: [
             {label: 'QA Engineer', value: 'Gabriel Gonzalez'},
-            {label: 'Project', value: 'Cypress Demo for BairesDev'},
+            {label: 'Project', value: 'Cypress Demo'},
             {label: 'Release', value: '1.0'}
         ]
     }
