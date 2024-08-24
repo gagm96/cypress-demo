@@ -23,6 +23,8 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "allure-commandline": "^2.30.0",
+    "allure-cypress": "^3.0.0-beta.10",
     "cypress": "^13.13.3",
     "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
